@@ -1,0 +1,10 @@
+# JWT Configuration
+JWT:
+  SECRET_KEY: "nBTjjulx6dv6FhruTpC/jNZhj1gCjKm9jH0QIPFxFbI="
+  REFRESH_TOKEN_EXPIRE: 86400  # in minutes (60 days)
+  ACCESS_TOKEN_EXPIRE: 2      # in minutes
+
+# Database Configurations
+SQLALCHEMY_DATABASE_URI: "postgresql+psycopg2://postgres:postgres@localhost:5432/flask-boiler"
+SQLALCHEMY_TRACK_MODIFICATIONS: False
+SQLALCHEMY_ENGINE_OPTIONS: { "isolation_level": "AUTOCOMMIT" }
